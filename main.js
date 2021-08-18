@@ -49,131 +49,131 @@ const newClient = {
 addClient(newClient);
 console.log(client);
 
-// function getClient(clientId) {
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(clientId == blockList[j].id){
-//             alert("block list")
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(clientId == client[i].id ){
-//             return client[i];
-//         }
-//     }
-// }
-// console.log(getClient(3));
+function getClient(clientId) {
+    for (let j = 0; j < blockList.length; j++) {
+        if(clientId == blockList[j].id){
+            alert("block list")
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(clientId == client[i].id ){
+            return client[i];
+        }
+    }
+}
+console.log(getClient(3));
 
 
-// function deleteClient(clientId) {
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(clientId == blockList[j].id){
-//             alert("block list")
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(clientId == client[i].id ){
-//             client.splice(i, 1)
-//         }
-//     }
-//     return client
-// }
-// console.log(deleteClient(2));
+function deleteClient(clientId) {
+    for (let j = 0; j < blockList.length; j++) {
+        if(clientId == blockList[j].id){
+            alert("block list")
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(clientId == client[i].id ){
+            client.splice(i, 1)
+        }
+    }
+    return client
+}
+console.log(deleteClient(2));
 
-// function withDrawMoney (clientId, amount) {
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(clientId == blockList[j].id){
-//             alert("block list")
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(clientId == client[i].id){
-//             client[i].balance -= amount;
-//             break;
-//         }
-//     }
-// }
-// withDrawMoney(2, 700);
-// console.log(client);
+function withDrawMoney (clientId, amount) {
+    for (let j = 0; j < blockList.length; j++) {
+        if(clientId == blockList[j].id){
+            alert("block list")
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(clientId == client[i].id){
+            client[i].balance -= amount;
+            break;
+        }
+    }
+}
+withDrawMoney(2, 700);
+console.log(client);
 
-// function withDrawMoney2(clientId, amount) {
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(clientId == blockList[j].id){
-//             alert("block list")
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(clientId == client[i].id){
-//             client[i].balance += amount;
-//             break;
-//         }
-//     }
-// }
-// withDrawMoney2(3, 800);
-// console.log(client);
+function withDrawMoney2(clientId, amount) {
+    for (let j = 0; j < blockList.length; j++) {
+        if(clientId == blockList[j].id){
+            alert("block list")
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(clientId == client[i].id){
+            client[i].balance += amount;
+            break;
+        }
+    }
+}
+withDrawMoney2(3, 800);
+console.log(client);
 
-// function drawClient( amount) {
-//     let drawClients = [];
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(blockList[j].balance > 0){
-//             break
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(client[i].balance >= amount){
-//             client[i].balance -= amount;
-//         }
-//         else{
-//             alert("not enough money")
-//         }
-//     }
-//     return client
-// }
-// console.log(drawClient(201));
+function drawClient( amount) {
+    let drawClients = [];
+    for (let j = 0; j < blockList.length; j++) {
+        if(blockList[j].balance > 0){
+            break
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(client[i].balance >= amount){
+            client[i].balance -= amount;
+        }
+        else{
+            alert("not enough money")
+        }
+    }
+    return client
+}
+console.log(drawClient(201));
 
-// function avgClients( amount) {
-//     let avgClients = [];
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(blockList[j].balance > 400){
-//             alert("block list")
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(client[i].balance > 400){
-//             avgClients.push(client[i]);
-//         }
-//     }
-//     return avgClients
-// }
-// console.log(avgClients());
+function avgClients( amount) {
+    let avgClients = [];
+    for (let j = 0; j < blockList.length; j++) {
+        if(blockList[j].balance > 400){
+            alert("block list")
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(client[i].balance > 400){
+            avgClients.push(client[i]);
+        }
+    }
+    return avgClients
+}
+console.log(avgClients());
 
-// function poorClients( amount) {
-//     let poorClients = [];
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(blockList[j].balance < 200){
-//             // break
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(client[i].balance <= 200){
-//             poorClients.push(client[i]);
-//         }
-//     }
-//     return poorClients
-// }
-// console.log(poorClients());
+function poorClients( amount) {
+    let poorClients = [];
+    for (let j = 0; j < blockList.length; j++) {
+        if(blockList[j].balance < 200){
+            // break
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(client[i].balance <= 200){
+            poorClients.push(client[i]);
+        }
+    }
+    return poorClients
+}
+console.log(poorClients());
 
-// function richClients( amount) {
-//     let richClients = [];
-//     for (let j = 0; j < blockList.length; j++) {
-//         if(blockList[j].balance > 1000000){
-//             // break
-//         }
-//     }
-//     for (let i = 0; i < client.length; i++) {
-//         if(client[i].balance >= 1000000){
-//             richClients.push(client[i]);
-//         }
-//     }
-//     return richClients
-// }
-// console.log(richClients());
+function richClients( amount) {
+    let richClients = [];
+    for (let j = 0; j < blockList.length; j++) {
+        if(blockList[j].balance > 1000000){
+            // break
+        }
+    }
+    for (let i = 0; i < client.length; i++) {
+        if(client[i].balance >= 1000000){
+            richClients.push(client[i]);
+        }
+    }
+    return richClients
+}
+console.log(richClients());
